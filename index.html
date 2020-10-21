@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://product-gallery.cloudinary.com/all.js" type="text/javascript">  
+        </script>
+        <script>
+            const myGallery = cloudinary.galleryWidget({ 
+                container: "#my-gallery", 
+                cloudName: "seekda-dev",
+                mediaAssets: [{ tag: "dhainzl-panorama-test-2", mediaType: 'spin' }],
+                spinProps: {
+                    animate: 'none'
+                }
+            }).render();
+        </script>
+    </head>
+    <body>
+        <div id="my-gallery" style="width:800px;height:600px">
+        </div>
+    </body>
+</html>
